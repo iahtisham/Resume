@@ -1,10 +1,7 @@
 \documentclass{resume}
 
-% 1. OPTIMIZED MARGINS: 0.3in ensures it fits on ONE page
 \usepackage[left=0.3in,top=0.3in,right=0.3in,bottom=0.3in]{geometry}
 \usepackage[hidelinks]{hyperref}
-
-% 2. KILL HYPHENATION: Prevents "navi-gation" and "Swift-Data" splits
 \usepackage[none]{hyphenat}
 
 \name{Ahtisham Hasan Khan}
@@ -13,7 +10,6 @@
 
 \begin{document}
 
-% 3. BALANCED SPACING: itemsep 0.1em gives breathing room but stays compact
 \renewenvironment{rSection}[1]{
   \sectionskip
   \MakeUppercase{\bf #1}
@@ -29,12 +25,12 @@
 }
 
 %----------------------------------------------------------------------------------------
-% SKILLS
+%	SKILLS
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Technical Skills}
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{3ex}} l }
-iOS Native & Swift, SwiftUI, Swift Charts, Combine, MVVM, SwiftData, HealthKit, \\
- &  AlarmKit, VisionKit \\
+Frontend \& Web & Vue.js, Vuex, Next.js, React, Webpack \\
+iOS Native & Swift, SwiftUI, Swift Charts, SwiftData, VisionKit \\
 Cross-Platform & React Native (iOS/Android), Flutter \\
 Backend \& Networking & Firebase, Supabase, RESTful APIs, WebSockets \\
 Engineering & Git, CI/CD (Xcode Cloud), TestFlight, RevenueCat, App Store Connect, Figma \\
@@ -48,15 +44,15 @@ Engineering & Git, CI/CD (Xcode Cloud), TestFlight, RevenueCat, App Store Connec
 
 \textbf{OfficeField} \hfill Karachi, Pakistan
 
-\textbf{Software Engineer, Mobile} \hfill May 2022 -- Present
+\textbf{Software Engineer, Web \& Mobile} \hfill May 2022 -- Present
 \begin{itemize}
 \itemsep 1pt {}
-\item \textbf{Traderverse:} Built core modules for a SwiftUI social trading app that reached \textbf{28,000+ registered users} in alpha, including the real-time feed with 5+ post types and live portfolio tracking.
-\item \textbf{AIFA SDK:} Built a modular iOS SDK for a conversational financial assistant that enterprise clients embed.
-\item \textbf{Real-time data and charts:} Wrote the shared WebSocket and Swift Charts layer behind live price feeds and interactive charts (line, area, bar, sector), used across \textbf{5 apps} in the trading suite.
+\item \textbf{Traderverse:} Built core modules for a social trading platform that reached \textbf{28,000+ registered users} in alpha: \textbf{Vue.js} components for the web dashboard and the native iOS app in SwiftUI, sharing data contracts and real-time feed logic.
+\item \textbf{Trader Analytics and TraderGPT:} Built a real-time market intelligence web app in \textbf{Vue.js} with WebSocket feeds and interactive charting, and a ``Chat with Ticker'' interface for querying live stock and crypto data in plain language.
+\item \textbf{Real-time data and charts:} Wrote the shared WebSocket layer behind live price feeds and built the charting on both sides, web chart libraries and Swift Charts on iOS, used across \textbf{5 apps} in the trading suite.
 \item \textbf{Traderguilds:} Shipped a Discord-style trader community twice: iOS in SwiftUI, Android in Flutter.
-\item \textbf{Trader Analytics and TraderGPT:} Shipped a React Native market intelligence app with WebSocket feeds and charting, and a ``Chat with Ticker'' interface for querying live stock and crypto data in plain language.
-\item \textbf{Localization and releases:} Added Arabic (RTL) support with UI mirroring across the suite, and set up Xcode Cloud for automatic TestFlight releases.
+\item \textbf{AIFA SDK:} Built a modular iOS SDK for a conversational financial assistant that enterprise clients embed.
+\item \textbf{Localization and releases:} Added Arabic (RTL) support with UI mirroring across web and iOS, and set up Xcode Cloud for automatic TestFlight releases.
 \end{itemize}
 
 \end{rSection}
@@ -66,6 +62,12 @@ Engineering & Git, CI/CD (Xcode Cloud), TestFlight, RevenueCat, App Store Connec
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Independent Products}
 
+\textbf{AppPriceKit - App Store Pricing Tool (Web)} \hfill Indie Developer
+\begin{itemize}
+\itemsep 1pt {}
+\item Built and shipped a \textbf{Next.js} web app for pricing across \textbf{175+ App Store storefronts}, from first idea to live site.
+\end{itemize}
+
 \textbf{Balancio - Expense \& Subscription Tracker (iOS)} \hfill Indie Developer
 \begin{itemize}
 \itemsep 1pt {}
@@ -73,10 +75,10 @@ Engineering & Git, CI/CD (Xcode Cloud), TestFlight, RevenueCat, App Store Connec
 \item Supabase sign-in and cross-device sync, RevenueCat subscriptions and paywalls, \textbf{5+ languages}.
 \end{itemize}
 
-\textbf{Timey - Social Alarm App (iOS)} \hfill Contract $\cdot$ iOS Engineer
+\textbf{Just Invoice - Invoicing Tool (iOS)} \hfill Indie Developer
 \begin{itemize}
 \itemsep 1pt {}
-\item Built native iOS features using AlarmKit for alarm sync and background execution, plus Firebase sign-in.
+\item Shipped an offline-first invoicing app: create and export PDF invoices with no internet. SwiftData, a custom PDF engine, \textbf{5+ languages}.
 \end{itemize}
 
 \textbf{Scan IT - Document Scanner (iOS)} \hfill Indie Developer
@@ -85,18 +87,16 @@ Engineering & Git, CI/CD (Xcode Cloud), TestFlight, RevenueCat, App Store Connec
 \item Built an on-device scanner: cropping, multi-page, PDF export, nothing sent to a server. SwiftUI, VisionKit.
 \end{itemize}
 
-\textbf{Just Invoice - Invoicing Tool (iOS)} \hfill Indie Developer
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WRITING
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Writing}
 \begin{itemize}
 \itemsep 1pt {}
-\item Shipped an offline-first invoicing app for freelancers: create, manage, and export PDF invoices with no internet. SwiftData, a custom PDF engine, Swift Charts, \textbf{5+ languages}.
+\item \textbf{Dev.to:} Write technical articles for \textbf{20,000+ readers}, mostly web development, covering problems I ran into on real projects and how I solved them.
 \end{itemize}
-
-\textbf{AppPriceKit - App Store Pricing Tool (Web)} \hfill Indie Developer
-\begin{itemize}
-\itemsep 1pt {}
-\item Built and shipped a web tool for pricing apps across \textbf{175+ App Store storefronts}.
-\end{itemize}
-
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
